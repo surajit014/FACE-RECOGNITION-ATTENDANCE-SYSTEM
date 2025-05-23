@@ -16,28 +16,28 @@ app.secret_key = 'your_secret_key'  # Needed for session
 # Load models
 mtcnn = MTCNN(image_size=160, margin=20)
 facenet = InceptionResnetV1(pretrained='vggface2').eval()
-rf_model = joblib.load(r"D:\Attendance\face_rf_model.pkl")
-label_encoder = joblib.load(r"D:\Attendance\label_encoder.pkl")
+rf_model = joblib.load("face_rf_model.pkl")
+label_encoder = joblib.load("label_encoder.pkl")
 
 # ID → Name mapping
 name_mapping = {
-    "001": "ARIFUL MALLICK",
-    "002": "ATANU MANNA",
-    "003": "SANKAR RAJAK",
-    "004": "SHADAN ALAM",
-    "005": "SURAJIT MISHRA",
-    "006": "SWAGATA NANDA",
-    "007": "NANDANA MUKHERJEE",
-    "008": "JAHIR UDDIN SK"
+    "001": "Parson 1",
+    "002": "parson 2",
+    "003": "parson 3",
+    "004": "parson 4",
+    "005": "parson 5",
+    "006": "parson 6",
+    "007": "parson 7",
+    "008": "parson 8"
 }
 
 # ---------- MySQL Utility Functions ----------
 def get_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="Admin123",
-        database="attendance"
+        user="user_name",
+        password="database_password",
+        database="database_name"
     )
 
 def insert_entry(name):
