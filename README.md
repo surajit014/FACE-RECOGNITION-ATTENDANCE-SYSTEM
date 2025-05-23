@@ -121,14 +121,3 @@ Attendance/
 - Consider implementing additional authentication for admin access
 - Regular backup of the attendance database is recommended
 
-## Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## License
-
-[Specify your license here]
-
-## Contact
-
-[Your contact information] 
