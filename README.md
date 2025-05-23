@@ -29,7 +29,7 @@ A web-based attendance system that uses face recognition to automatically track 
 
 ## Prerequisites
 
-- Python 3.7+
+- Python 3.11.2
 - MySQL Server
 - Webcam-enabled device
 - Required Python packages (install via pip):
