@@ -5,9 +5,9 @@ import numpy as np
 from facenet_pytorch import MTCNN, InceptionResnetV1
 
 # --- CONFIG ---
-image_path = r"D:\Attendance\test image\camera.jpg"           # 🔁 Change this to your test image path
-model_path = r"D:\Attendance\face_rf_model.pkl"
-encoder_path = r"D:\Attendance\label_encoder.pkl"
+image_path = "test image\image.jpg"           # 🔁 Change this to your test image path
+model_path = "face_rf_model.pkl"
+encoder_path = "label_encoder.pkl"
 
 # --- LOAD MODELS ---
 print("[INFO] Loading models...")
